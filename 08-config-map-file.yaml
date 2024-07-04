@@ -1,9 +1,10 @@
-kind: Pod 
-apiVersion: V1 
+apiVersion: v1
+kind: ConfigMap
 metadata:
   name: config_map
-data: 
+data:
   course: "devops with aws"
-  student: "siva"
+  trainer: "siva"
   github: "https://github.com/Siva837453/k8-resources.git"
-  
+
+
