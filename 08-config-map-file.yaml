@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: config_map
+  name: daws78
 data:
   course: "devops with aws"
   trainer: "siva"
