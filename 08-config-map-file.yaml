@@ -1,0 +1,9 @@
+kind: Pod 
+apiVersion: V1 
+metadata:
+  name: config_map
+data: 
+  course: "devops with aws"
+  student: "siva"
+  github: "https://github.com/Siva837453/k8-resources.git"
+  
