@@ -2,10 +2,10 @@ kind: Pod
 apiVersion: v1
 metadata: 
   name: labels 
-labels:
-  course: kubernetes
-  trainer: siva
+  labels:
+    course: kubernetes
+    trainer: siva
 spec:
   containers:
-    - name: nginx
-      image: nginx
+  - name: nginx
+    image: nginx
