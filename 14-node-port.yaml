@@ -4,6 +4,7 @@ metadata:
   name: nginx-np
 
 spec:
+  type: NodePort
   selector:
     name: frontend
     project: expense
