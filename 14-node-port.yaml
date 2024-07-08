@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-up
+
+spec:
+  selector:
+    name: frontend
+    project: expense
+    environment: dev
+    component: frontend
+  ports:
+  - protocol: TCP
+    port: 80 #service port
+    targetPort: 80 #target port
+    nodePort: 32760
