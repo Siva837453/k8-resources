@@ -7,22 +7,22 @@ metadata:
     app: nginx
     tier: frontend
   # modify replicas according to your case
-  spec:
-    replicas: 3
-    selector:
-      matchLabels:
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+      tier: frontend
+    # below is the pod defination
+  template: 
+    metadata:
+      labels:
         app: nginx
         tier: frontend
-    # below is the pod defination
-    template: 
-      metadata:
-        labels:
-          app: nginx
-          tier: frontend
-          project: some-project
-      spec:
+        project: some-project
+    spec:
       containers:
-        name: nginx
+      - name: nginx
         image: nginx 
 
 
