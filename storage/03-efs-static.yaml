@@ -15,19 +15,19 @@ spec:
     volumeHandle: fs-007921d54d6d07ae7
 
 ---
-# apiVersion: v1
-# kind: PersistentVolumeClaim
-# metadata:
-#   name: efs-static-claim
-# spec:
-#   accessModes:
-#     - ReadWriteOnce
-#   storageClassName: ""
-#   volumeName: efs-static
-#   resources:
-#     requests:
-#       storage: 2Gi
-# ---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-static-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: ""
+  volumeName: efs-static
+  resources:
+    requests:
+      storage: 2Gi
+---
 
 # apiVersion: v1
 # kind: Pod
